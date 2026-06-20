@@ -257,7 +257,7 @@ html[lang="ckb"] .mmenu a,html[lang="ar"] .mmenu a{text-transform:none}
   .hero-inner{padding-block:118px 9vh}
   .scrollcue{display:none}
 }
-@media (max-width:520px){.cats,.why-grid{grid-template-columns:1fr}.langsw{display:none}}
+@media (max-width:520px){.cats,.why-grid{grid-template-columns:1fr}.hdr .langsw{display:none}}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}.reveal,.stagger>*,.h-rise{opacity:1;transform:none}}
 </style>
 </head>
@@ -645,7 +645,7 @@ function setLang(lang){
   document.querySelectorAll(".langsw button").forEach(b=>b.classList.toggle("on",b.dataset.lang===lang));
   try{localStorage.setItem("elit-lang",lang);}catch(e){}
 }
-document.querySelectorAll(".langsw button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+document.querySelectorAll(".langsw button").forEach(b=>b.addEventListener("click",()=>{setLang(b.dataset.lang);const m=document.getElementById("mmenu");if(m)m.classList.remove("open");}));
 const hdr=document.getElementById("hdr");
 const onScroll=()=>hdr.classList.toggle("scrolled",window.scrollY>40);
 window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
