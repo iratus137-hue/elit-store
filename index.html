@@ -3,329 +3,275 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Elit Store · Premium Furniture — Sulaymaniyah</title>
-<meta name="description" content="Elit Store — premium furniture in Sulaymaniyah. Official dealer of leading brands. Sofa sets, bedrooms, dining rooms and more. Order on WhatsApp." />
-<meta name="theme-color" content="#1C1A17" />
+<title>Elit Store · Sports Nutrition & Supplements — Sulaymaniyah</title>
+<meta name="description" content="Elit Store — 100% original sports supplements in Sulaymaniyah. Whey protein, pre-workout, creatine, vitamins and more. Delivery across Iraq. Order on WhatsApp." />
+<meta name="theme-color" content="#0E0F0C" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
-   ELIT STORE — pitch demo. Single self-contained file.
-   Aesthetic: "Quiet Luxury" — ivory · charcoal · brass · emerald.
+   ELIT STORE — sports nutrition pitch demo. Self-contained.
+   Aesthetic: "Elite Performance" — graphite black · electric volt.
    Trilingual: Kurdish (default) / Arabic (RTL) · English (LTR).
    ============================================================ */
 :root{
-  /* grounds */
-  --ivory:#F6F1E7; --bone:#EDE5D6; --sand:#E2D6C2; --sand-deep:#D2C1A6;
-  /* ink */
-  --ink:#1C1A16; --ink-soft:#4B453B; --ink-mute:#8A8170;
-  /* dark */
-  --espresso:#1A1714; --espresso-2:#23201B; --cream:#F1E8D7;
-  /* signature accents */
-  --gold:#C2A06B; --brass:#A6824B; --gold-deep:#8A6A38;
-  --forest:#1E3A31; --forest-2:#173028; --moss:#5E7A63;
-  /* type */
-  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
-  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ink:#0E0F0C; --graphite:#161813; --graphite-2:#1E211A; --steel:#2C3026;
+  --paper:#F4F5EF; --paper-2:#E8EADF; --line-l:#D7D9CC;
+  --fog:#9AA08C; --fog-d:#6C7160;
+  --cloud:#F4F5EF; --cloud-soft:#C9CDBC;
+  --volt:#C6F24E; --volt-deep:#A4D62B; --volt-dk:#7E9E20;
+  --wa:#22a45a; --wa-d:#1c8b4c;
+  --disp:'Saira Condensed',Oswald,'Arial Narrow',sans-serif;
+  --body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
   --maxw:1280px;
-  --shadow-1:0 1px 2px rgba(26,23,20,.05),0 12px 30px -16px rgba(26,23,20,.22);
-  --shadow-2:0 36px 80px -36px rgba(26,23,20,.5);
-  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --sh1:0 2px 4px rgba(0,0,0,.18),0 16px 40px -20px rgba(0,0,0,.5);
+  --sh2:0 40px 90px -40px rgba(0,0,0,.7);
+  --glow:0 0 0 1px rgba(198,242,78,.5),0 14px 40px -16px rgba(198,242,78,.4);
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-/* Arabic-script languages swap to Vazirmatn for both roles */
 html[lang="ckb"], html[lang="ar"]{
-  --serif:'Vazirmatn','Noto Naskh Arabic',Tahoma,sans-serif;
-  --sans:'Vazirmatn','Noto Naskh Arabic',Tahoma,sans-serif;
+  --disp:'Vazirmatn','Noto Naskh Arabic',Tahoma,sans-serif;
+  --body:'Vazirmatn','Noto Naskh Arabic',Tahoma,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  font-family:var(--sans);
-  background:var(--ivory);
-  color:var(--ink);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
-  overflow-x:hidden;
-}
-body::before{ /* warm atmosphere */
-  content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background:
-    radial-gradient(70vw 55vh at 82% -10%, rgba(194,160,107,.12), transparent 60%),
-    radial-gradient(60vw 50vh at -5% 12%, rgba(30,58,49,.07), transparent 55%);
-}
-.grain{position:fixed;inset:0;z-index:9990;pointer-events:none;background-image:var(--grain);background-size:160px 160px;opacity:.04;mix-blend-mode:multiply}
-
+body{font-family:var(--body);background:var(--ink);color:var(--cloud);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+.grain{position:fixed;inset:0;z-index:9990;pointer-events:none;background-image:var(--grain);background-size:160px;opacity:.05;mix-blend-mode:overlay}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;cursor:pointer;background:none;border:none}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
-
+:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
 .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(18px,4.2vw,46px)}
-.skip{position:absolute;inset-inline-start:12px;top:-60px;z-index:1200;background:var(--ink);color:var(--cream);padding:10px 16px;border-radius:4px;transition:top .2s}
+.skip{position:absolute;inset-inline-start:12px;top:-60px;z-index:1200;background:var(--volt);color:var(--ink);padding:10px 16px;border-radius:4px;transition:top .2s;font-weight:700}
 .skip:focus{top:12px}
 
-/* ---------- shared type ---------- */
-.eyebrow{
-  font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.32em;
-  text-transform:uppercase;color:var(--brass);display:inline-flex;align-items:center;gap:.7em;
-}
-.eyebrow::before{content:"";width:30px;height:1px;background:var(--gold)}
-html[lang="ckb"] .eyebrow,html[lang="ar"] .eyebrow{text-transform:none;letter-spacing:.02em;font-weight:600;font-size:.9rem}
-.eyebrow.light{color:var(--gold)}
+/* type */
+.eyebrow{font-family:var(--body);font-weight:800;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--volt-deep);display:inline-flex;align-items:center;gap:.7em}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--volt)}
+html[lang="ckb"] .eyebrow,html[lang="ar"] .eyebrow{letter-spacing:.04em;text-transform:none;font-weight:700;font-size:.92rem}
+.eyebrow.on-volt{color:var(--ink)}.eyebrow.on-volt::before{background:var(--ink)}
+.eyebrow.dark{color:var(--volt-dk)}
 
-h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em;color:var(--ink)}
-html[lang="ckb"] h1,html[lang="ar"] h1,html[lang="ckb"] h2,html[lang="ar"] h2,html[lang="ckb"] h3,html[lang="ar"] h3{font-weight:600;letter-spacing:0;line-height:1.3}
-.h-xl{font-size:clamp(2.7rem,6.4vw,5.2rem)}
-.h-lg{font-size:clamp(2rem,4.6vw,3.6rem)}
-.h-md{font-size:clamp(1.5rem,2.6vw,2.1rem)}
-.lead{font-size:clamp(1.02rem,1.5vw,1.18rem);color:var(--ink-soft);max-width:52ch}
-html[lang="ckb"] .lead,html[lang="ar"] .lead{line-height:1.85}
-.serif-i{font-style:italic}
-html[lang="ckb"] .serif-i,html[lang="ar"] .serif-i{font-style:normal}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:.95;letter-spacing:.005em;text-transform:uppercase}
+html[lang="ckb"] h1,html[lang="ar"] h1,html[lang="ckb"] h2,html[lang="ar"] h2,html[lang="ckb"] h3,html[lang="ar"] h3{text-transform:none;font-weight:700;line-height:1.3;letter-spacing:0}
+.h-xl{font-size:clamp(3.1rem,8.5vw,6.6rem)}
+.h-lg{font-size:clamp(2.3rem,5.4vw,4.2rem)}
+.h-md{font-size:clamp(1.7rem,3vw,2.6rem)}
+.lead{font-size:clamp(1.02rem,1.5vw,1.18rem);color:var(--fog);max-width:54ch;font-weight:400}
+html[lang="ckb"] .lead,html[lang="ar"] .lead{line-height:1.9}
+.volt{color:var(--volt)}
 
-/* ---------- buttons ---------- */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.65em;
-  font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;
-  padding:1.05em 1.9em;border-radius:2px;line-height:1;white-space:nowrap;
-  transition:transform .3s cubic-bezier(.2,.8,.2,1),background .3s,color .3s,box-shadow .3s,border-color .3s;
-}
-html[lang="ckb"] .btn,html[lang="ar"] .btn{text-transform:none;letter-spacing:0;font-weight:600}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;font-family:var(--body);font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:1.08em 1.9em;border-radius:3px;line-height:1;white-space:nowrap;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s,color .25s,box-shadow .25s,border-color .25s}
+html[lang="ckb"] .btn,html[lang="ar"] .btn{text-transform:none;letter-spacing:0;font-weight:700}
 .btn svg{width:1.2em;height:1.2em;flex:none}
-.btn-solid{background:var(--ink);color:var(--cream)}
-.btn-solid:hover{background:var(--forest);transform:translateY(-2px);box-shadow:var(--shadow-2)}
-.btn-gold{background:var(--gold);color:var(--espresso)}
-.btn-gold:hover{background:var(--brass);transform:translateY(-2px);box-shadow:var(--shadow-2)}
-.btn-line{border:1px solid rgba(26,23,20,.32);color:var(--ink)}
-.btn-line:hover{border-color:var(--ink);background:var(--ink);color:var(--cream);transform:translateY(-2px)}
-.btn-wa{background:#1f7a4d;color:#fff}
-.btn-wa:hover{background:#196b43;transform:translateY(-2px);box-shadow:var(--shadow-2)}
-.on-dark .btn-line{border-color:rgba(241,232,215,.4);color:var(--cream)}
-.on-dark .btn-line:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
-/* hero outline button sits on a dark image — force light text + glass bg */
-.hero .btn-line{color:var(--cream);border-color:rgba(241,232,215,.5);background:rgba(20,17,14,.3);backdrop-filter:blur(8px)}
-.hero .btn-line:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
-
+.btn-volt{background:var(--volt);color:var(--ink)}
+.btn-volt:hover{background:#d4ff5e;transform:translateY(-2px);box-shadow:var(--glow)}
+.btn-dark{background:var(--ink);color:var(--cloud)}
+.btn-dark:hover{background:#000;transform:translateY(-2px);box-shadow:var(--sh2)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-d);transform:translateY(-2px);box-shadow:var(--sh2)}
+.btn-out{border:1.5px solid rgba(244,245,239,.32);color:var(--cloud)}
+.btn-out:hover{border-color:var(--volt);color:var(--volt);transform:translateY(-2px)}
+.btn-out-dark{border:1.5px solid rgba(14,15,12,.3);color:var(--ink)}
+.btn-out-dark:hover{border-color:var(--ink);background:var(--ink);color:var(--cloud);transform:translateY(-2px)}
 .ic-arr{transition:transform .3s}
 [dir="rtl"] .ic-arr{transform:scaleX(-1)}
 [dir="rtl"] .btn:hover .ic-arr,[dir="rtl"] .lnk:hover .ic-arr{transform:scaleX(-1) translateX(4px)}
 [dir="ltr"] .btn:hover .ic-arr,[dir="ltr"] .lnk:hover .ic-arr{transform:translateX(4px)}
+.lnk{display:inline-flex;align-items:center;gap:.5em;font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--volt-deep);transition:color .25s,gap .25s}
+html[lang="ckb"] .lnk,html[lang="ar"] .lnk{text-transform:none;letter-spacing:0;font-weight:700}
+.lnk:hover{color:var(--volt)}
 
-.lnk{display:inline-flex;align-items:center;gap:.5em;font-weight:600;font-size:.9rem;color:var(--brass);border-bottom:1px solid transparent;padding-bottom:2px;transition:border-color .25s,color .25s}
-.lnk:hover{color:var(--gold-deep);border-color:var(--gold)}
-
-/* ---------- header ---------- */
-.hdr{position:fixed;inset-block-start:0;inset-inline:0;z-index:1000;transition:background .4s,box-shadow .4s,padding .4s;padding-block:18px}
+/* header */
+.hdr{position:fixed;inset-block-start:0;inset-inline:0;z-index:1000;transition:background .4s,box-shadow .4s,padding .4s,backdrop-filter .4s;padding-block:18px}
 .hdr-in{display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{display:flex;align-items:baseline;gap:.5ch;font-family:var(--serif);line-height:1}
-.brand .mark{font-size:1.65rem;font-weight:600;letter-spacing:.14em;color:var(--cream);transition:color .4s}
-.brand .sub{font-family:var(--sans);font-size:.6rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);transition:color .4s}
-html[lang="ckb"] .brand .sub,html[lang="ar"] .brand .sub{letter-spacing:.2em}
-.nav{display:flex;align-items:center;gap:clamp(16px,2vw,30px)}
-.nav a{font-size:.82rem;font-weight:600;letter-spacing:.04em;color:rgba(241,232,215,.82);transition:color .25s;position:relative}
-.nav a::after{content:"";position:absolute;inset-inline-start:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:width .3s}
-.nav a:hover{color:var(--cream)}.nav a:hover::after{width:100%}
-.hdr-right{display:flex;align-items:center;gap:14px}
-.langsw{display:flex;align-items:center;gap:2px;border:1px solid rgba(241,232,215,.28);border-radius:999px;padding:3px;transition:border-color .4s}
-.langsw button{font-size:.72rem;font-weight:700;letter-spacing:.04em;padding:.42em .8em;border-radius:999px;color:rgba(241,232,215,.7);transition:background .25s,color .25s}
-.langsw button.on{background:var(--gold);color:var(--espresso)}
-.langsw button:not(.on):hover{color:var(--cream)}
-.hdr .btn{padding:.85em 1.3em;font-size:.72rem}
-/* scrolled state */
-.hdr.scrolled{background:rgba(246,241,231,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(26,23,20,.08),0 18px 40px -30px rgba(26,23,20,.5);padding-block:11px}
-.hdr.scrolled .brand .mark{color:var(--ink)}
-.hdr.scrolled .nav a{color:var(--ink-soft)}.hdr.scrolled .nav a:hover{color:var(--ink)}
-.hdr.scrolled .langsw{border-color:rgba(26,23,20,.2)}
-.hdr.scrolled .langsw button:not(.on){color:var(--ink-mute)}
-.hdr.scrolled .langsw button:not(.on):hover{color:var(--ink)}
+.brand{display:flex;align-items:baseline;gap:.45ch;line-height:1}
+.brand .mark{font-family:var(--disp);font-size:1.7rem;font-weight:800;letter-spacing:.04em;color:var(--cloud)}
+.brand .dot{color:var(--volt)}
+.brand .sub{font-family:var(--body);font-size:.58rem;letter-spacing:.34em;text-transform:uppercase;color:var(--volt-deep);font-weight:800}
+html[lang="ckb"] .brand .sub,html[lang="ar"] .brand .sub{letter-spacing:.12em}
+.nav{display:flex;align-items:center;gap:clamp(15px,2vw,30px)}
+.nav a{font-size:.8rem;font-weight:700;letter-spacing:.04em;color:rgba(244,245,239,.78);transition:color .25s;position:relative;text-transform:uppercase}
+html[lang="ckb"] .nav a,html[lang="ar"] .nav a{text-transform:none}
+.nav a::after{content:"";position:absolute;inset-inline-start:0;bottom:-7px;width:0;height:2px;background:var(--volt);transition:width .3s}
+.nav a:hover{color:var(--cloud)}.nav a:hover::after{width:100%}
+.hdr-right{display:flex;align-items:center;gap:13px}
+.langsw{display:flex;align-items:center;gap:2px;border:1px solid rgba(244,245,239,.22);border-radius:999px;padding:3px}
+.langsw button{font-size:.72rem;font-weight:800;padding:.42em .8em;border-radius:999px;color:rgba(244,245,239,.66);transition:background .25s,color .25s}
+.langsw button.on{background:var(--volt);color:var(--ink)}
+.langsw button:not(.on):hover{color:var(--cloud)}
+.hdr .btn{padding:.82em 1.25em;font-size:.72rem}
+.hdr.scrolled{background:rgba(14,15,12,.86);backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 1px 0 rgba(244,245,239,.08),0 20px 40px -30px #000;padding-block:11px}
 .burger{display:none;flex-direction:column;gap:5px;width:30px;padding:4px 0}
-.burger span{height:1.6px;background:var(--cream);transition:background .4s,transform .3s,opacity .3s}
-.hdr.scrolled .burger span{background:var(--ink)}
+.burger span{height:2px;background:var(--cloud);transition:.3s}
 
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:var(--cream);overflow:hidden;isolation:isolate}
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
 .hero-bg{position:absolute;inset:0;z-index:-2}
-.hero-bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.92) brightness(.78)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.2) contrast(1.05) brightness(.5)}
 .hero-bg::after{content:"";position:absolute;inset:0;background:
-  linear-gradient(180deg,rgba(20,17,14,.55) 0%,rgba(20,17,14,.18) 32%,rgba(20,17,14,.62) 78%,rgba(20,17,14,.92) 100%),
-  radial-gradient(60% 60% at 78% 14%,rgba(194,160,107,.16),transparent 60%)}
+  linear-gradient(180deg,rgba(14,15,12,.66) 0%,rgba(14,15,12,.34) 36%,rgba(14,15,12,.8) 74%,rgba(14,15,12,.98) 100%),
+  radial-gradient(58% 50% at 80% 16%,rgba(198,242,78,.16),transparent 62%)}
 .hero-inner{padding-block:140px 7vh;width:100%}
-.hero .eyebrow{margin-bottom:26px}
-.hero h1{max-width:16ch;margin-bottom:24px}
-.hero h1 .gold{color:var(--gold)}
-.hero .lead{color:rgba(241,232,215,.86);max-width:46ch;margin-bottom:38px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-.hero-proof{margin-top:40px;display:flex;align-items:center;gap:14px;color:rgba(241,232,215,.7);font-size:.86rem}
-.hero-proof .star{color:var(--gold);letter-spacing:.1em}
-.hero-proof b{color:var(--cream);font-weight:700}
-.scrollcue{position:absolute;inset-inline-end:clamp(18px,4vw,46px);bottom:30px;writing-mode:vertical-lr;font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:rgba(241,232,215,.6);display:flex;align-items:center;gap:14px}
-html[lang="ckb"] .scrollcue,html[lang="ar"] .scrollcue{text-transform:none;letter-spacing:.1em}
-.scrollcue::after{content:"";width:1px;height:46px;background:linear-gradient(var(--gold),transparent);animation:cue 2s ease-in-out infinite}
+.hero .eyebrow{margin-bottom:24px}
+.hero h1{max-width:15ch;margin-bottom:22px;color:var(--cloud)}
+.hero .lead{color:rgba(244,245,239,.8);max-width:48ch;margin-bottom:36px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.hero-chips{margin-top:38px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:.5em;font-size:.8rem;font-weight:700;color:var(--cloud);background:rgba(244,245,239,.06);border:1px solid rgba(244,245,239,.16);border-radius:999px;padding:.5em 1em}
+.chip svg{width:1.05em;height:1.05em;color:var(--volt)}
+.scrollcue{position:absolute;inset-inline-end:clamp(18px,4vw,46px);bottom:28px;writing-mode:vertical-lr;font-size:.64rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(244,245,239,.55);display:flex;align-items:center;gap:14px;font-weight:700}
+html[lang="ckb"] .scrollcue,html[lang="ar"] .scrollcue{text-transform:none;letter-spacing:.08em;writing-mode:vertical-rl}
+.scrollcue::after{content:"";width:2px;height:42px;background:linear-gradient(var(--volt),transparent);animation:cue 2s ease-in-out infinite}
 @keyframes cue{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
 
-/* ---------- dealer marquee strip ---------- */
-.strip{background:var(--forest);color:var(--cream);padding-block:20px;overflow:hidden;border-block:1px solid rgba(194,160,107,.22)}
-.strip-row{display:flex;align-items:center;gap:0;white-space:nowrap;width:max-content;animation:marq 34s linear infinite}
-.strip-row span{font-family:var(--serif);font-size:clamp(1.2rem,2.2vw,1.7rem);font-weight:500;padding-inline:clamp(22px,3vw,46px);display:inline-flex;align-items:center;gap:clamp(22px,3vw,46px)}
-html[lang="ckb"] .strip-row span,html[lang="ar"] .strip-row span{font-weight:600}
-.strip-row span::after{content:"✦";color:var(--gold);font-size:.7em}
+/* volt marquee strip */
+.strip{background:var(--volt);color:var(--ink);padding-block:18px;overflow:hidden}
+.strip-row{display:flex;align-items:center;white-space:nowrap;width:max-content;animation:marq 30s linear infinite}
+.strip-row span{font-family:var(--disp);font-size:clamp(1.1rem,2.1vw,1.6rem);font-weight:800;text-transform:uppercase;letter-spacing:.02em;padding-inline:clamp(18px,2.6vw,40px);display:inline-flex;align-items:center;gap:clamp(18px,2.6vw,40px)}
+html[lang="ckb"] .strip-row span,html[lang="ar"] .strip-row span{text-transform:none;font-weight:700}
+.strip-row span::after{content:"›";font-size:1.2em;opacity:.5}
 @keyframes marq{to{transform:translateX(-50%)}}
 [dir="rtl"] .strip-row{animation-direction:reverse}
-.dealer-line{text-align:center;padding-block:34px 0;color:var(--ink-soft)}
-.dealer-line .eyebrow{justify-content:center}
+.dealer-line{text-align:center;padding-block:30px 0}
+.dealer-line .eyebrow{justify-content:center;color:var(--fog)}
 
-/* ---------- section frame ---------- */
-.sec{padding-block:clamp(72px,11vh,128px)}
-.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:54px}
-.sec-head .eyebrow{margin-bottom:18px}
-.sec-head p.lead{margin-top:8px}
+/* sections */
+.sec{padding-block:clamp(70px,11vh,128px)}
+.sec.light{background:var(--paper);color:var(--ink)}
+.sec.light .lead{color:var(--fog-d)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:50px}
+.sec-head .eyebrow{margin-bottom:16px}
 
-/* ---------- rooms grid ---------- */
-.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.room{position:relative;display:block;overflow:hidden;border-radius:3px;background:var(--bone);aspect-ratio:3/4;box-shadow:var(--shadow-1)}
-.room:nth-child(1),.room:nth-child(6){grid-row:span 2;aspect-ratio:auto}
-.room img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1),filter .6s}
-.room::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,17,14,0) 38%,rgba(20,17,14,.78) 100%);transition:opacity .5s}
-.room-cap{position:absolute;inset-inline:0;bottom:0;z-index:2;padding:22px;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;color:var(--cream)}
-.room-cap h3{color:var(--cream);font-size:1.45rem}
-.room-cap .go{width:38px;height:38px;border-radius:999px;border:1px solid rgba(241,232,215,.5);display:grid;place-items:center;flex:none;transition:background .3s,color .3s,border-color .3s}
-.room:hover img{transform:scale(1.07)}
-.room:hover .go{background:var(--gold);color:var(--espresso);border-color:var(--gold)}
+/* category cards (dark cards on light) */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{position:relative;background:var(--graphite);color:var(--cloud);border:1px solid var(--steel);border-radius:8px;padding:26px 24px 22px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.cat::before{content:"";position:absolute;inset-inline-start:0;inset-block-start:0;width:0;height:3px;background:var(--volt);transition:width .4s}
+.cat:hover{transform:translateY(-5px);border-color:rgba(198,242,78,.5);box-shadow:var(--sh2)}
+.cat:hover::before{width:100%}
+.cat-ic{width:38px;height:38px;color:var(--volt)}
+.cat-ic svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.5}
+.cat h3{font-size:1.7rem;color:var(--cloud);margin-bottom:4px;line-height:1}
+.cat .csub{font-size:.82rem;color:var(--fog);font-weight:500}
+.cat .cgo{position:absolute;inset-inline-end:20px;inset-block-end:20px;color:var(--fog);transition:color .3s,transform .3s}
+.cat:hover .cgo{color:var(--volt)}
+.cat-row{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
 
-/* ---------- featured editorial ---------- */
-.feat{display:grid;gap:clamp(46px,7vh,86px)}
-.feat-row{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,72px);align-items:center}
-.feat-row:nth-child(even){direction:inherit}
-.feat-row:nth-child(even) .feat-media{order:-1}
-.feat-media{position:relative;aspect-ratio:5/4;overflow:hidden;border-radius:3px;box-shadow:var(--shadow-2)}
-.feat-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
-.feat-row:hover .feat-media img{transform:scale(1.05)}
-.feat-num{font-family:var(--serif);font-size:clamp(3rem,7vw,5.5rem);color:var(--sand-deep);line-height:.8;display:block;margin-bottom:18px}
-.feat-txt h3{margin-bottom:18px}
-.feat-txt .lead{margin-bottom:26px}
+/* goals (dark editorial) */
+.goals{display:grid;gap:clamp(44px,7vh,84px)}
+.goal{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,5vw,70px);align-items:center}
+.goal:nth-child(even) .goal-media{order:-1}
+.goal-media{position:relative;aspect-ratio:5/4;overflow:hidden;border-radius:8px;box-shadow:var(--sh2)}
+.goal-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.15) contrast(1.04) brightness(.82);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.goal-media::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(14,15,12,.3),transparent 50%)}
+.goal:hover .goal-media img{transform:scale(1.05)}
+.goal-num{font-family:var(--disp);font-size:clamp(2.6rem,6vw,4.6rem);color:var(--volt);line-height:.8;display:block;margin-bottom:14px}
+.goal-txt h3{margin-bottom:16px;color:var(--cloud)}
+.goal-txt .lead{margin-bottom:24px;color:var(--fog)}
 
-/* ---------- why (dark) ---------- */
-.why{background:var(--espresso);color:var(--cream);position:relative;overflow:hidden}
-.why::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 85% 0%,rgba(194,160,107,.12),transparent 60%);pointer-events:none}
-.why h2,.why h3{color:var(--cream)}
-.why .sec-head .lead{color:rgba(241,232,215,.7)}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(241,232,215,.12);border:1px solid rgba(241,232,215,.12);border-radius:4px;overflow:hidden}
-.why-cell{background:var(--espresso);padding:38px 30px;transition:background .4s}
-.why-cell:hover{background:var(--espresso-2)}
-.why-ic{width:46px;height:46px;color:var(--gold);margin-bottom:24px}
-.why-ic svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.3}
-.why-cell h3{font-size:1.4rem;margin-bottom:12px}
-.why-cell p{color:rgba(241,232,215,.66);font-size:.95rem;line-height:1.7}
+/* why (graphite) */
+.why{background:var(--graphite);position:relative;overflow:hidden}
+.why::before{content:"";position:absolute;inset:0;background:radial-gradient(46% 55% at 88% 0%,rgba(198,242,78,.1),transparent 60%);pointer-events:none}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--steel);border:1px solid var(--steel);border-radius:10px;overflow:hidden}
+.why-cell{background:var(--graphite);padding:36px 28px;transition:background .35s}
+.why-cell:hover{background:var(--graphite-2)}
+.why-ic{width:44px;height:44px;color:var(--volt);margin-bottom:22px}
+.why-ic svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.4}
+.why-cell h3{font-size:1.5rem;margin-bottom:11px;color:var(--cloud)}
+.why-cell p{color:var(--fog);font-size:.95rem;line-height:1.7}
 
-/* ---------- visit ---------- */
+/* visit (light) */
 .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,60px);align-items:center}
-.visit-card{background:var(--bone);border:1px solid rgba(26,23,20,.08);border-radius:4px;padding:clamp(28px,4vw,46px);box-shadow:var(--shadow-1)}
-.visit-list{display:grid;gap:4px;margin-top:30px}
-.visit-item{display:flex;gap:18px;padding:18px 0;border-top:1px solid rgba(26,23,20,.1)}
+.visit-card{}
+.visit-list{display:grid;margin-top:28px}
+.visit-item{display:flex;gap:18px;padding:18px 0;border-top:1px solid var(--line-l)}
 .visit-item:first-child{border-top:none}
-.visit-item .vi-ic{width:24px;height:24px;color:var(--brass);flex:none;margin-top:2px}
-.visit-item .vi-ic svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.4}
-.visit-item .k{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);font-weight:700;margin-bottom:3px}
+.visit-item .vi-ic{width:24px;height:24px;color:var(--volt-dk);flex:none;margin-top:2px}
+.visit-item .vi-ic svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.5}
+.visit-item .k{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fog-d);font-weight:800;margin-bottom:3px}
 html[lang="ckb"] .visit-item .k,html[lang="ar"] .visit-item .k{text-transform:none;letter-spacing:0}
-.visit-item .v{font-size:1.08rem;font-weight:600;color:var(--ink)}
-.visit-map{position:relative;aspect-ratio:1/1;border-radius:4px;overflow:hidden;box-shadow:var(--shadow-2);background:linear-gradient(135deg,var(--forest),var(--forest-2))}
-.visit-map img{width:100%;height:100%;object-fit:cover;opacity:.9}
-.visit-map .pin{position:absolute;inset-block-start:50%;inset-inline-start:50%;transform:translate(-50%,-50%);width:64px;height:64px;display:grid;place-items:center}
-[dir="rtl"] .visit-map .pin{transform:translate(50%,-50%)}
-.visit-map .pin::before{content:"";position:absolute;inset:0;border-radius:999px;background:var(--gold);opacity:.35;animation:pulse 2.4s ease-out infinite}
-.visit-map .pin span{width:18px;height:18px;border-radius:999px;background:var(--gold);border:3px solid var(--cream);box-shadow:0 6px 16px rgba(0,0,0,.4);z-index:2}
-@keyframes pulse{0%{transform:scale(.5);opacity:.5}100%{transform:scale(1.6);opacity:0}}
+.visit-item .v{font-size:1.08rem;font-weight:700;color:var(--ink)}
+.visit-media{position:relative;aspect-ratio:4/3;border-radius:10px;overflow:hidden;box-shadow:var(--sh2)}
+.visit-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.15) brightness(.7)}
+.visit-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(14,15,12,.4))}
+.visit-media .pin{position:absolute;inset-block-start:50%;inset-inline-start:50%;transform:translate(-50%,-50%);width:64px;height:64px;display:grid;place-items:center}
+[dir="rtl"] .visit-media .pin{transform:translate(50%,-50%)}
+.visit-media .pin::before{content:"";position:absolute;inset:0;border-radius:999px;background:var(--volt);opacity:.4;animation:pulse 2.4s ease-out infinite}
+.visit-media .pin span{width:18px;height:18px;border-radius:999px;background:var(--volt);border:3px solid var(--ink);z-index:2}
+@keyframes pulse{0%{transform:scale(.5);opacity:.5}100%{transform:scale(1.7);opacity:0}}
 
-/* ---------- contact (forest) ---------- */
-.cta{background:var(--forest);color:var(--cream);position:relative;overflow:hidden;text-align:center}
-.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 0%,rgba(194,160,107,.16),transparent 60%);pointer-events:none}
-.cta h2{color:var(--cream);max-width:18ch;margin-inline:auto;margin-bottom:22px}
-.cta .lead{color:rgba(241,232,215,.82);margin-inline:auto;margin-bottom:38px;text-align:center}
-.cta-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+/* contact (volt) */
+.cta{background:var(--volt);color:var(--ink);text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 120%,rgba(14,15,12,.12),transparent 60%);pointer-events:none}
+.cta .eyebrow{justify-content:center;color:var(--ink)}.cta .eyebrow::before{background:var(--ink)}
+.cta h2{color:var(--ink);max-width:20ch;margin-inline:auto;margin-bottom:18px}
+.cta .lead{color:rgba(14,15,12,.72);margin-inline:auto;margin-bottom:34px}
+.cta-btns{display:flex;flex-wrap:wrap;gap:13px;justify-content:center}
 
-/* ---------- footer ---------- */
-.ft{background:var(--espresso);color:rgba(241,232,215,.6);padding-block:64px 30px}
-.ft-top{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(241,232,215,.12)}
-.ft .brand .mark{color:var(--cream)}
-.ft-tag{margin-top:16px;max-width:30ch;font-size:.92rem;line-height:1.7}
-.ft-cols{display:flex;gap:clamp(36px,6vw,90px);flex-wrap:wrap}
-.ft-col h4{font-family:var(--sans);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:700}
-html[lang="ckb"] .ft-col h4,html[lang="ar"] .ft-col h4{letter-spacing:.04em;text-transform:none}
-.ft-col a{display:block;font-size:.92rem;padding:5px 0;color:rgba(241,232,215,.62);transition:color .2s}
-.ft-col a:hover{color:var(--cream)}
-.ft-bot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;padding-top:24px;font-size:.8rem;color:rgba(241,232,215,.45)}
-.ft-bot a{color:var(--gold)}
+/* footer */
+.ft{background:var(--ink);color:var(--fog);padding-block:60px 28px;border-top:1px solid var(--steel)}
+.ft-top{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;padding-bottom:38px;border-bottom:1px solid var(--steel)}
+.ft-tag{margin-top:15px;max-width:32ch;font-size:.92rem;line-height:1.7}
+.ft-cols{display:flex;gap:clamp(34px,6vw,88px);flex-wrap:wrap}
+.ft-col h4{font-family:var(--body);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--volt-deep);margin-bottom:15px;font-weight:800}
+html[lang="ckb"] .ft-col h4,html[lang="ar"] .ft-col h4{letter-spacing:.03em;text-transform:none}
+.ft-col a{display:block;font-size:.92rem;padding:5px 0;color:var(--fog);transition:color .2s}
+.ft-col a:hover{color:var(--volt)}
+.ft-bot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;padding-top:22px;font-size:.8rem;color:var(--fog-d)}
+.ft-bot a{color:var(--volt-deep)}
 
-/* ---------- reveal ---------- */
+/* reveal */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 .stagger>*{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .stagger.in>*{opacity:1;transform:none}
-.stagger.in>*:nth-child(2){transition-delay:.08s}
-.stagger.in>*:nth-child(3){transition-delay:.16s}
-.stagger.in>*:nth-child(4){transition-delay:.24s}
-.stagger.in>*:nth-child(5){transition-delay:.32s}
-.stagger.in>*:nth-child(6){transition-delay:.4s}
-.stagger.in>*:nth-child(7){transition-delay:.48s}
-.stagger.in>*:nth-child(8){transition-delay:.56s}
-/* hero load animation */
+.stagger.in>*:nth-child(2){transition-delay:.07s}.stagger.in>*:nth-child(3){transition-delay:.14s}
+.stagger.in>*:nth-child(4){transition-delay:.21s}.stagger.in>*:nth-child(5){transition-delay:.28s}
+.stagger.in>*:nth-child(6){transition-delay:.35s}.stagger.in>*:nth-child(7){transition-delay:.42s}
+.stagger.in>*:nth-child(8){transition-delay:.49s}
 .h-rise{opacity:0;transform:translateY(26px);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
-.h-rise.d1{animation-delay:.15s}.h-rise.d2{animation-delay:.32s}.h-rise.d3{animation-delay:.49s}.h-rise.d4{animation-delay:.66s}.h-rise.d5{animation-delay:.83s}
+.h-rise.d1{animation-delay:.14s}.h-rise.d2{animation-delay:.3s}.h-rise.d3{animation-delay:.46s}.h-rise.d4{animation-delay:.62s}
 @keyframes rise{to{opacity:1;transform:none}}
 
-/* ---------- mobile menu ---------- */
-.mmenu{position:fixed;inset:0;z-index:1100;background:var(--espresso);color:var(--cream);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;opacity:0;visibility:hidden;transition:opacity .4s;padding:40px}
+/* mobile menu */
+.mmenu{position:fixed;inset:0;z-index:1100;background:var(--ink);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;opacity:0;visibility:hidden;transition:opacity .4s;padding:40px}
 .mmenu.open{opacity:1;visibility:visible}
-.mmenu a{font-family:var(--serif);font-size:2rem;color:var(--cream);padding:10px}
-.mmenu .mclose{position:absolute;inset-block-start:24px;inset-inline-end:24px;font-size:1.8rem;line-height:1;color:var(--gold)}
-.mmenu .langsw{margin-top:24px;border-color:rgba(241,232,215,.3)}
+.mmenu a{font-family:var(--disp);font-size:2.2rem;text-transform:uppercase;color:var(--cloud);padding:8px}
+html[lang="ckb"] .mmenu a,html[lang="ar"] .mmenu a{text-transform:none}
+.mmenu .mclose{position:absolute;inset-block-start:22px;inset-inline-end:24px;font-size:1.7rem;color:var(--volt)}
+.mmenu .langsw{margin-top:22px}
 
-/* ---------- responsive ---------- */
-@media (max-width:1080px){
-  .rooms{grid-template-columns:repeat(2,1fr)}
-  .room:nth-child(1),.room:nth-child(6){grid-row:auto;aspect-ratio:3/4}
-  .why-grid{grid-template-columns:repeat(2,1fr)}
-}
+/* responsive */
+@media (max-width:1080px){.cats{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:860px){
-  .nav{display:none}
-  .hdr .btn.btn-desktop{display:none}
+  .nav,.hdr .btn.btn-desktop{display:none}
   .burger{display:flex}
-  .feat-row{grid-template-columns:1fr;gap:24px}
-  .feat-row:nth-child(even) .feat-media{order:0}
+  .goal{grid-template-columns:1fr;gap:22px}
+  .goal:nth-child(even) .goal-media{order:0}
   .visit-grid{grid-template-columns:1fr}
-  .visit-map{order:-1;aspect-ratio:16/11}
-  .hero-inner{padding-block:120px 9vh}
+  .visit-media{order:-1;aspect-ratio:16/10}
+  .hero-inner{padding-block:118px 9vh}
   .scrollcue{display:none}
 }
-@media (max-width:520px){
-  .rooms{grid-template-columns:1fr}
-  .why-grid{grid-template-columns:1fr}
-  .langsw{display:none}
-  .hero-proof{flex-wrap:wrap}
-}
-@media (prefers-reduced-motion:reduce){
-  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
-  .reveal,.stagger>*,.h-rise{opacity:1;transform:none}
-}
+@media (max-width:520px){.cats,.why-grid{grid-template-columns:1fr}.langsw{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}.reveal,.stagger>*,.h-rise{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-<!-- ===================== HEADER ===================== -->
+<!-- HEADER -->
 <header class="hdr" id="hdr">
   <div class="wrap hdr-in">
-    <a class="brand" href="#" aria-label="Elit Store — home">
-      <span class="mark">ELIT</span><span class="sub">Store</span>
-    </a>
+    <a class="brand" href="#" aria-label="Elit Store"><span class="mark">ELIT<span class="dot">.</span></span><span class="sub" data-i18n="brand.sub">Supplements</span></a>
     <nav class="nav" aria-label="Primary">
-      <a href="#rooms" data-i18n="nav.collections">Collections</a>
-      <a href="#featured" data-i18n="nav.rooms">Rooms</a>
-      <a href="#why" data-i18n="nav.about">About</a>
-      <a href="#visit" data-i18n="nav.visit">Showroom</a>
+      <a href="#cats" data-i18n="nav.shop">Shop</a>
+      <a href="#goals" data-i18n="nav.goals">Goals</a>
+      <a href="#why" data-i18n="nav.why">Why Elit</a>
+      <a href="#visit" data-i18n="nav.visit">Visit</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="hdr-right">
@@ -334,21 +280,18 @@ html[lang="ckb"] .ft-col h4,html[lang="ar"] .ft-col h4{letter-spacing:.04em;text
         <button type="button" data-lang="ar">عربی</button>
         <button type="button" data-lang="en">EN</button>
       </div>
-      <a class="btn btn-gold btn-desktop" href="#contact" data-i18n="cta.whatsapp">WhatsApp</a>
-      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="btn btn-volt btn-desktop" href="#contact" data-i18n="cta.order">Order</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<!-- mobile menu -->
 <div class="mmenu" id="mmenu">
   <button class="mclose" id="mclose" aria-label="Close">✕</button>
-  <a href="#rooms" data-i18n="nav.collections">Collections</a>
-  <a href="#featured" data-i18n="nav.rooms">Rooms</a>
-  <a href="#why" data-i18n="nav.about">About</a>
-  <a href="#visit" data-i18n="nav.visit">Showroom</a>
+  <a href="#cats" data-i18n="nav.shop">Shop</a>
+  <a href="#goals" data-i18n="nav.goals">Goals</a>
+  <a href="#why" data-i18n="nav.why">Why Elit</a>
+  <a href="#visit" data-i18n="nav.visit">Visit</a>
   <a href="#contact" data-i18n="nav.contact">Contact</a>
   <div class="langsw" role="group" aria-label="Language">
     <button type="button" data-lang="ckb">کوردی</button>
@@ -359,173 +302,170 @@ html[lang="ckb"] .ft-col h4,html[lang="ar"] .ft-col h4{letter-spacing:.04em;text
 
 <main id="main">
 
-<!-- ===================== HERO ===================== -->
+<!-- HERO -->
 <section class="hero">
   <div class="hero-bg" aria-hidden="true">
-    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1900&q=80" alt="" fetchpriority="high" />
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1900&q=80" alt="" fetchpriority="high" />
   </div>
   <div class="wrap hero-inner">
-    <p class="eyebrow light h-rise" data-i18n="hero.eyebrow">Premium furniture · Sulaymaniyah</p>
-    <h1 class="h-xl h-rise d1"><span data-i18n="hero.title">The art of living <span class="gold serif-i">well.</span></span></h1>
-    <p class="lead h-rise d2" data-i18n="hero.sub">Sofa sets, bedrooms and dining rooms from the world's finest makers — curated for your home by Elit Store.</p>
+    <p class="eyebrow h-rise" data-i18n="hero.eyebrow">Sports nutrition · Sulaymaniyah</p>
+    <h1 class="h-xl h-rise d1"><span data-i18n="hero.title">Stronger <span class="volt">every day.</span></span></h1>
+    <p class="lead h-rise d2" data-i18n="hero.sub">100% original supplements — protein, pre-workout, vitamins and more, from the brands athletes trust. Delivered across Iraq.</p>
     <div class="hero-cta h-rise d3">
-      <a class="btn btn-gold" href="#rooms"><span data-i18n="hero.cta1">Explore collections</span>
-        <svg class="ic-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn-line" href="#contact" data-i18n="hero.cta2">Order on WhatsApp</a>
+      <a class="btn btn-volt" href="#cats"><span data-i18n="hero.cta1">Shop supplements</span>
+        <svg class="ic-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-wa" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1112 20.2z"/></svg><span data-i18n="hero.cta2">Order on WhatsApp</span></a>
     </div>
-    <div class="hero-proof h-rise d4">
-      <span class="star" aria-hidden="true">★★★★★</span>
-      <span data-i18n="hero.proof">Trusted by <b>22K+</b> on Instagram</span>
+    <div class="hero-chips h-rise d4">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg><span data-i18n="chip.original">100% Original</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg><span data-i18n="chip.community">22K+ community</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13h11V6H3zM14 9h4l3 3v4h-7zM7 19a2 2 0 100-4 2 2 0 000 4zM18 19a2 2 0 100-4 2 2 0 000 4z"/></svg><span data-i18n="chip.delivery">Delivery across Iraq</span></span>
     </div>
   </div>
   <div class="scrollcue" aria-hidden="true"><span data-i18n="hero.scroll">Scroll</span></div>
 </section>
 
-<!-- ===================== DEALER STRIP ===================== -->
+<!-- STRIP -->
 <section class="strip" aria-label="Categories">
   <div class="strip-row" id="marquee">
-    <span data-i18n="strip.1">Sofa Sets</span><span data-i18n="strip.2">Bedrooms</span><span data-i18n="strip.3">Dining Rooms</span><span data-i18n="strip.4">Wardrobes</span><span data-i18n="strip.5">Corner Sofas</span><span data-i18n="strip.6">Décor &amp; Lighting</span>
-    <span data-i18n="strip.1">Sofa Sets</span><span data-i18n="strip.2">Bedrooms</span><span data-i18n="strip.3">Dining Rooms</span><span data-i18n="strip.4">Wardrobes</span><span data-i18n="strip.5">Corner Sofas</span><span data-i18n="strip.6">Décor &amp; Lighting</span>
+    <span data-i18n="strip.1">Whey Protein</span><span data-i18n="strip.2">Creatine</span><span data-i18n="strip.3">Pre-Workout</span><span data-i18n="strip.4">BCAA</span><span data-i18n="strip.5">Vitamins</span><span data-i18n="strip.6">Mass Gainer</span>
+    <span data-i18n="strip.1">Whey Protein</span><span data-i18n="strip.2">Creatine</span><span data-i18n="strip.3">Pre-Workout</span><span data-i18n="strip.4">BCAA</span><span data-i18n="strip.5">Vitamins</span><span data-i18n="strip.6">Mass Gainer</span>
   </div>
 </section>
-<div class="wrap dealer-line reveal">
-  <p class="eyebrow" data-i18n="dealer.text">Official dealer of leading furniture brands</p>
+<div class="wrap dealer-line reveal" style="background:var(--ink)">
+  <p class="eyebrow" data-i18n="dealer.text">Official dealer of leading supplement brands</p>
 </div>
 
-<!-- ===================== ROOMS ===================== -->
-<section class="sec" id="rooms">
+<!-- CATEGORIES -->
+<section class="sec light" id="cats">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div>
-        <p class="eyebrow" data-i18n="rooms.eyebrow">Collections</p>
-        <h2 class="h-lg" data-i18n="rooms.title">Shop by room</h2>
-      </div>
-      <p class="lead" data-i18n="rooms.sub">Everything for a complete home — chosen for quality, comfort and lasting style.</p>
+      <div><p class="eyebrow dark" data-i18n="cats.eyebrow">Shop</p><h2 class="h-lg" data-i18n="cats.title">Shop by category</h2></div>
+      <p class="lead" data-i18n="cats.sub">Everything you need to train, recover and stay healthy — all 100% genuine.</p>
     </div>
-    <div class="rooms stagger">
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Sofa sets" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.sofa">Sofa Sets</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    <div class="cats stagger">
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><path d="M7 3h10l-1 4H8zM6 7h12l-1.2 12.5a2 2 0 01-2 1.5H9.2a2 2 0 01-2-1.5z"/><path d="M9 12h6"/></svg></div></div>
+        <div><h3 data-i18n="cat.whey">Whey Protein</h3><div class="csub" data-i18n="cat.whey.s">Whey · Isolate · Vegan</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Bedrooms" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.bedroom">Bedrooms</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div></div>
+        <div><h3 data-i18n="cat.pre">Pre-Workout</h3><div class="csub" data-i18n="cat.pre.s">Energy · Pump · Focus</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=900&q=80" alt="Dining rooms" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.dining">Dining Rooms</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><path d="M4 7l8-4 8 4v10l-8 4-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></div></div>
+        <div><h3 data-i18n="cat.crea">Creatine</h3><div class="csub" data-i18n="cat.crea.s">Strength · Volume</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80" alt="Wardrobes" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.wardrobe">Wardrobes</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg></div></div>
+        <div><h3 data-i18n="cat.bcaa">Amino &amp; BCAA</h3><div class="csub" data-i18n="cat.bcaa.s">Recovery · Endurance</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=900&q=80" alt="Armchairs" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.armchair">Armchairs</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><path d="M6 21V10a6 6 0 0112 0v11M6 21h12M9 21v-4h6v4"/></svg></div></div>
+        <div><h3 data-i18n="cat.mass">Mass Gainer</h3><div class="csub" data-i18n="cat.mass.s">Bulk · Calories</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80" alt="TV units" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.tv">TV Units</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 11c0 5.5-7 10-7 10z"/></svg></div></div>
+        <div><h3 data-i18n="cat.vit">Vitamins &amp; Health</h3><div class="csub" data-i18n="cat.vit.s">Immunity · Wellness</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=80" alt="Corner sofas" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.corner">Corner Sofas</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><path d="M12 3c2 3 5 4 5 8a5 5 0 01-10 0c0-4 3-5 5-8z"/></svg></div></div>
+        <div><h3 data-i18n="cat.fat">Fat Burner</h3><div class="csub" data-i18n="cat.fat.s">Lean · Define</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <a class="room" href="#contact">
-        <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=900&q=80" alt="Décor and lighting" loading="lazy" />
-        <div class="room-cap"><h3 data-i18n="room.decor">Décor &amp; Lighting</h3><span class="go" aria-hidden="true"><svg class="ic-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <a class="cat" href="#contact">
+        <div class="cat-row"><div class="cat-ic"><svg viewBox="0 0 24 24"><path d="M8 2h8l-1 4H9zM7 6h10v13a3 3 0 01-3 3h-4a3 3 0 01-3-3zM7 12h10"/></svg></div></div>
+        <div><h3 data-i18n="cat.acc">Shakers &amp; More</h3><div class="csub" data-i18n="cat.acc.s">Bottles · Gear</div></div>
+        <span class="cgo" aria-hidden="true"><svg class="ic-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ===================== FEATURED ===================== -->
-<section class="sec" id="featured" style="background:var(--bone)">
+<!-- GOALS -->
+<section class="sec" id="goals">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div>
-        <p class="eyebrow" data-i18n="feat.eyebrow">Featured</p>
-        <h2 class="h-lg" data-i18n="feat.title">Pieces that make a home</h2>
-      </div>
+      <div><p class="eyebrow" data-i18n="goals.eyebrow">Built around you</p><h2 class="h-lg" style="color:var(--cloud)" data-i18n="goals.title">Reach your goal</h2></div>
+      <p class="lead" data-i18n="goals.sub">Tell us where you're headed — we'll match the right products to get you there.</p>
     </div>
-    <div class="feat">
-      <article class="feat-row reveal">
-        <div class="feat-txt">
-          <span class="feat-num">01</span>
-          <h3 class="h-md" data-i18n="feat1.title">The Living Room</h3>
-          <p class="lead" data-i18n="feat1.text">Statement sofas and corner sets in rich fabrics and leathers — built for evenings that linger.</p>
-          <a class="lnk" href="#contact"><span data-i18n="feat.cta">Discover</span><svg class="ic-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="goals">
+      <article class="goal reveal">
+        <div class="goal-txt">
+          <span class="goal-num">01</span>
+          <h3 class="h-md" data-i18n="goal1.t">Build muscle</h3>
+          <p class="lead" data-i18n="goal1.d">Premium whey, isolates and mass gainers to grow and hold lean size, session after session.</p>
+          <a class="lnk" href="#contact"><span data-i18n="goals.cta">Build my stack</span><svg class="ic-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="feat-media"><img src="https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=1100&q=80" alt="Living room" loading="lazy" /></div>
+        <div class="goal-media"><img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=1100&q=80" alt="Build muscle" loading="lazy" /></div>
       </article>
-      <article class="feat-row reveal">
-        <div class="feat-txt">
-          <span class="feat-num">02</span>
-          <h3 class="h-md" data-i18n="feat2.title">The Bedroom</h3>
-          <p class="lead" data-i18n="feat2.text">Calm, considered bedrooms — beds, wardrobes and dressers finished to last.</p>
-          <a class="lnk" href="#contact"><span data-i18n="feat.cta">Discover</span><svg class="ic-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <article class="goal reveal">
+        <div class="goal-txt">
+          <span class="goal-num">02</span>
+          <h3 class="h-md" data-i18n="goal2.t">Train harder</h3>
+          <p class="lead" data-i18n="goal2.d">Pre-workout, creatine and energy formulas for explosive sessions and serious focus.</p>
+          <a class="lnk" href="#contact"><span data-i18n="goals.cta">Build my stack</span><svg class="ic-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="feat-media"><img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1100&q=80" alt="Bedroom" loading="lazy" /></div>
+        <div class="goal-media"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1100&q=80" alt="Train harder" loading="lazy" /></div>
       </article>
-      <article class="feat-row reveal">
-        <div class="feat-txt">
-          <span class="feat-num">03</span>
-          <h3 class="h-md" data-i18n="feat3.title">The Dining Room</h3>
-          <p class="lead" data-i18n="feat3.text">Tables that gather everyone — timeless dining sets for family and guests.</p>
-          <a class="lnk" href="#contact"><span data-i18n="feat.cta">Discover</span><svg class="ic-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <article class="goal reveal">
+        <div class="goal-txt">
+          <span class="goal-num">03</span>
+          <h3 class="h-md" data-i18n="goal3.t">Recover &amp; thrive</h3>
+          <p class="lead" data-i18n="goal3.d">Amino acids, vitamins and daily health essentials so you bounce back and feel your best.</p>
+          <a class="lnk" href="#contact"><span data-i18n="goals.cta">Build my stack</span><svg class="ic-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="feat-media"><img src="https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?auto=format&fit=crop&w=1100&q=80" alt="Dining room" loading="lazy" /></div>
+        <div class="goal-media"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=80" alt="Recover and thrive" loading="lazy" /></div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ===================== WHY ===================== -->
+<!-- WHY -->
 <section class="sec why" id="why">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div>
-        <p class="eyebrow light" data-i18n="why.eyebrow">Why Elit</p>
-        <h2 class="h-lg" data-i18n="why.title">The Elit difference</h2>
-      </div>
-      <p class="lead" data-i18n="why.sub">A showroom that respects your taste, your time and your home.</p>
+      <div><p class="eyebrow" data-i18n="why.eyebrow">Why Elit</p><h2 class="h-lg" style="color:var(--cloud)" data-i18n="why.title">No fakes. No guesswork.</h2></div>
+      <p class="lead" data-i18n="why.sub">The supplement store athletes in Slêmanî actually trust.</p>
     </div>
     <div class="why-grid stagger">
       <div class="why-cell">
-        <div class="why-ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.8L21 9l-5 4.6L17.4 21 12 17.3 6.6 21 8 13.6 3 9l6.6-.2z"/></svg></div>
-        <h3 data-i18n="why1.t">Curated quality</h3>
-        <p data-i18n="why1.d">Only original pieces from makers we trust.</p>
+        <div class="why-ic"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3 data-i18n="why1.t">100% Original</h3><p data-i18n="why1.d">Every product authentic and sealed, with a valid expiry date.</p>
       </div>
       <div class="why-cell">
         <div class="why-ic"><svg viewBox="0 0 24 24"><path d="M3 13h11V6H3zM14 9h4l3 3v4h-7zM7 19a2 2 0 100-4 2 2 0 000 4zM18 19a2 2 0 100-4 2 2 0 000 4z"/></svg></div>
-        <h3 data-i18n="why2.t">Delivery across Iraq</h3>
-        <p data-i18n="why2.d">To your door in Slêmanî and beyond.</p>
+        <h3 data-i18n="why2.t">Delivery across Iraq</h3><p data-i18n="why2.d">To your door in Slêmanî and beyond.</p>
       </div>
       <div class="why-cell">
-        <div class="why-ic"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M3 21h18M9 21v-6h6v6"/></svg></div>
-        <h3 data-i18n="why3.t">Showroom experience</h3>
-        <p data-i18n="why3.d">See, touch and feel before you choose.</p>
+        <div class="why-ic"><svg viewBox="0 0 24 24"><path d="M12 14a4 4 0 100-8 4 4 0 000 8zM5 21a7 7 0 0114 0"/></svg></div>
+        <h3 data-i18n="why3.t">Expert guidance</h3><p data-i18n="why3.d">Tell us your goal — we'll build the right stack for you.</p>
       </div>
       <div class="why-cell">
-        <div class="why-ic"><svg viewBox="0 0 24 24"><path d="M20.8 11.1A8.4 8.4 0 1112 3.6M21 4l-9 9-3-3"/></svg></div>
-        <h3 data-i18n="why4.t">After-sales care</h3>
-        <p data-i18n="why4.d">We're here long after delivery.</p>
+        <div class="why-ic"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3 data-i18n="why4.t">Fair prices</h3><p data-i18n="why4.d">Honest value on the brands you train with.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== VISIT ===================== -->
-<section class="sec" id="visit">
+<!-- VISIT -->
+<section class="sec light" id="visit">
   <div class="wrap">
     <div class="visit-grid">
       <div class="visit-card reveal">
-        <p class="eyebrow" data-i18n="visit.eyebrow">Visit us</p>
-        <h2 class="h-md" data-i18n="visit.title">Come see it in person</h2>
+        <p class="eyebrow dark" data-i18n="visit.eyebrow">Visit us</p>
+        <h2 class="h-md" data-i18n="visit.title">Come see the shelves</h2>
         <div class="visit-list">
           <div class="visit-item">
             <span class="vi-ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 1114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-            <div><div class="k" data-i18n="visit.addrlabel">Showroom</div><div class="v" data-i18n="visit.addr">Cani Ba, Sulaymaniyah</div></div>
+            <div><div class="k" data-i18n="visit.addrlabel">Store</div><div class="v" data-i18n="visit.addr">Cani Ba, Sulaymaniyah</div></div>
           </div>
           <div class="visit-item">
             <span class="vi-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
@@ -536,30 +476,30 @@ html[lang="ckb"] .ft-col h4,html[lang="ar"] .ft-col h4{letter-spacing:.04em;text
             <div><div class="k" data-i18n="visit.phonelabel">Call / WhatsApp</div><div class="v" dir="ltr">+964 770 000 0000</div></div>
           </div>
         </div>
-        <a class="btn btn-solid" href="#contact" style="margin-top:30px"><span data-i18n="visit.cta">Get directions</span>
-          <svg class="ic-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-out-dark" href="#contact" style="margin-top:28px"><span data-i18n="visit.cta">Get directions</span>
+          <svg class="ic-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="visit-map reveal" aria-label="Map">
-        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=80" alt="Showroom interior" loading="lazy" />
+      <div class="visit-media reveal" aria-label="Store">
+        <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=1100&q=80" alt="Inside the store" loading="lazy" />
         <div class="pin"><span></span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== CONTACT ===================== -->
-<section class="sec cta on-dark" id="contact">
+<!-- CONTACT -->
+<section class="sec cta" id="contact">
   <div class="wrap reveal">
-    <p class="eyebrow light" style="justify-content:center" data-i18n="contact.eyebrow">Let's talk</p>
-    <h2 class="h-lg" data-i18n="contact.title">Let's furnish your home</h2>
-    <p class="lead" data-i18n="contact.sub">Send us the room and your budget on WhatsApp — we'll send back options the same day.</p>
+    <p class="eyebrow" data-i18n="contact.eyebrow">Let's talk</p>
+    <h2 class="h-lg" data-i18n="contact.title">Tell us your goal. We'll build your stack.</h2>
+    <p class="lead" data-i18n="contact.sub">Message us on WhatsApp with your goal and budget — we'll recommend the right products the same day.</p>
     <div class="cta-btns">
-      <a class="btn btn-wa" href="https://wa.me/9647700000000" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1112 20.2z"/></svg>
+      <a class="btn btn-dark" href="https://wa.me/9647700000000" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1112 20.2z"/></svg>
         <span data-i18n="contact.cta">Message on WhatsApp</span>
       </a>
-      <a class="btn btn-line" href="https://www.instagram.com/elit_store_sulaymaniyah/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+      <a class="btn btn-out-dark" href="https://www.instagram.com/elit_store_sulaymaniyah/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
         <span data-i18n="contact.insta">Follow on Instagram</span>
       </a>
     </div>
@@ -568,26 +508,26 @@ html[lang="ckb"] .ft-col h4,html[lang="ar"] .ft-col h4{letter-spacing:.04em;text
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
+<!-- FOOTER -->
 <footer class="ft">
   <div class="wrap">
     <div class="ft-top">
       <div>
-        <a class="brand" href="#"><span class="mark">ELIT</span><span class="sub">Store</span></a>
-        <p class="ft-tag" data-i18n="footer.tag">Premium furniture in Sulaymaniyah. Official dealer of leading brands.</p>
+        <a class="brand" href="#"><span class="mark">ELIT<span class="dot">.</span></span><span class="sub" data-i18n="brand.sub">Supplements</span></a>
+        <p class="ft-tag" data-i18n="footer.tag">100% original sports nutrition in Sulaymaniyah. Delivery across Iraq.</p>
       </div>
       <div class="ft-cols">
         <div class="ft-col">
           <h4 data-i18n="footer.shop">Shop</h4>
-          <a href="#rooms" data-i18n="room.sofa">Sofa Sets</a>
-          <a href="#rooms" data-i18n="room.bedroom">Bedrooms</a>
-          <a href="#rooms" data-i18n="room.dining">Dining Rooms</a>
-          <a href="#rooms" data-i18n="room.wardrobe">Wardrobes</a>
+          <a href="#cats" data-i18n="cat.whey">Whey Protein</a>
+          <a href="#cats" data-i18n="cat.pre">Pre-Workout</a>
+          <a href="#cats" data-i18n="cat.crea">Creatine</a>
+          <a href="#cats" data-i18n="cat.vit">Vitamins &amp; Health</a>
         </div>
         <div class="ft-col">
           <h4 data-i18n="footer.company">Company</h4>
-          <a href="#why" data-i18n="nav.about">About</a>
-          <a href="#visit" data-i18n="nav.visit">Showroom</a>
+          <a href="#why" data-i18n="nav.why">Why Elit</a>
+          <a href="#visit" data-i18n="nav.visit">Visit</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </div>
         <div class="ft-col">
@@ -606,129 +546,116 @@ html[lang="ckb"] .ft-col h4,html[lang="ar"] .ft-col h4{letter-spacing:.04em;text
 </footer>
 
 <script>
-/* ============================================================
-   i18n — Kurdish (ckb) default · Arabic (ar) · English (en)
-   ============================================================ */
 const I18N = {
   "skip":{en:"Skip to content",ar:"تخطَّ إلى المحتوى",ckb:"بازبدە بۆ ناوەڕۆک"},
-  "nav.collections":{en:"Collections",ar:"المجموعات",ckb:"کۆلێکشن"},
-  "nav.rooms":{en:"Rooms",ar:"الغرف",ckb:"ژوورەکان"},
-  "nav.about":{en:"About",ar:"من نحن",ckb:"دەربارە"},
-  "nav.visit":{en:"Showroom",ar:"المعرض",ckb:"شۆڕووم"},
+  "brand.sub":{en:"Supplements",ar:"مكملات",ckb:"سەپلیمێنت"},
+  "nav.shop":{en:"Shop",ar:"المتجر",ckb:"بازاڕ"},
+  "nav.goals":{en:"Goals",ar:"الأهداف",ckb:"ئامانجەکان"},
+  "nav.why":{en:"Why Elit",ar:"لماذا إيليت",ckb:"بۆچی ئێلیت"},
+  "nav.visit":{en:"Visit",ar:"زورونا",ckb:"سەردانمان بکە"},
   "nav.contact":{en:"Contact",ar:"تواصل",ckb:"پەیوەندی"},
-  "cta.whatsapp":{en:"WhatsApp",ar:"واتساب",ckb:"واتساپ"},
-  "hero.eyebrow":{en:"Premium furniture · Sulaymaniyah",ar:"أثاث فاخر · السليمانية",ckb:"مۆبیلیای لوکس · سلێمانی"},
-  "hero.title":{en:'The art of living <span class="gold serif-i">well.</span>',ar:'فنُّ <span class="gold serif-i">العيش الجميل.</span>',ckb:'هونەری <span class="gold serif-i">ژیانێکی جوان.</span>'},
-  "hero.sub":{en:"Sofa sets, bedrooms and dining rooms from the world's finest makers — curated for your home by Elit Store.",ar:"أطقم كنب، غرف نوم وغرف طعام من أرقى المصانع العالمية — منتقاة لبيتك من إيليت ستور.",ckb:"سێت کەنەفە، ژووری نوستن و ژووری نانخواردن لە باشترین کۆمپانیاکانی جیهان — هەڵبژێردراو بۆ ماڵەکەت لەلایەن ئێلیت ستۆرەوە."},
-  "hero.cta1":{en:"Explore collections",ar:"تصفّح المجموعات",ckb:"کۆلێکشنەکان ببینە"},
+  "cta.order":{en:"Order",ar:"اطلب",ckb:"داوابکە"},
+  "hero.eyebrow":{en:"Sports nutrition · Sulaymaniyah",ar:"تغذية رياضية · السليمانية",ckb:"خۆراکی وەرزشی · سلێمانی"},
+  "hero.title":{en:'Stronger <span class="volt">every day.</span>',ar:'أقوى <span class="volt">كل يوم.</span>',ckb:'بەهێزتر <span class="volt">هەموو ڕۆژێک.</span>'},
+  "hero.sub":{en:"100% original supplements — protein, pre-workout, vitamins and more, from the brands athletes trust. Delivered across Iraq.",ar:"مكملات أصلية 100% — بروتين، بري-وركاوت، فيتامينات والمزيد، من الماركات التي يثق بها الرياضيون. توصيل لكل العراق.",ckb:"سەپلیمێنتی ١٠٠٪ ئەسڵی — پرۆتین، پری-وۆرکئاوت، ڤیتامین و زیاتر، لە براندە متمانەپێکراوەکان. گەیاندن بۆ هەموو عێراق."},
+  "hero.cta1":{en:"Shop supplements",ar:"تسوّق المكملات",ckb:"سەپلیمێنت بکڕە"},
   "hero.cta2":{en:"Order on WhatsApp",ar:"اطلب عبر واتساب",ckb:"داوابکە لە واتساپ"},
-  "hero.proof":{en:'Trusted by <b>22K+</b> on Instagram',ar:'موثوقٌ من <b>+22 ألف</b> على إنستغرام',ckb:'متمانەی <b>+٢٢ هەزار</b> لە ئینستاگرام'},
+  "chip.original":{en:"100% Original",ar:"أصلي 100%",ckb:"١٠٠٪ ئەسڵی"},
+  "chip.community":{en:"22K+ community",ar:"+22 ألف متابع",ckb:"+٢٢ هەزار شوێنکەوتوو"},
+  "chip.delivery":{en:"Delivery across Iraq",ar:"توصيل لكل العراق",ckb:"گەیاندن بۆ هەموو عێراق"},
   "hero.scroll":{en:"Scroll",ar:"اسحب",ckb:"بەرەوخوار"},
-  "strip.1":{en:"Sofa Sets",ar:"أطقم كنب",ckb:"سێت کەنەفە"},
-  "strip.2":{en:"Bedrooms",ar:"غرف نوم",ckb:"ژووری نوستن"},
-  "strip.3":{en:"Dining Rooms",ar:"غرف طعام",ckb:"ژووری نانخواردن"},
-  "strip.4":{en:"Wardrobes",ar:"دواليب",ckb:"دۆڵاب"},
-  "strip.5":{en:"Corner Sofas",ar:"كنب زاوية",ckb:"کەنەفەی گۆشە"},
-  "strip.6":{en:"Décor & Lighting",ar:"ديكور وإضاءة",ckb:"دیکۆر و ڕووناکی"},
-  "dealer.text":{en:"Official dealer of leading furniture brands",ar:"الوكيل الرسمي لكبرى ماركات الأثاث",ckb:"بریکاری فەرمیی گەورەترین براندەکانی مۆبیلیا"},
-  "rooms.eyebrow":{en:"Collections",ar:"المجموعات",ckb:"کۆلێکشن"},
-  "rooms.title":{en:"Shop by room",ar:"تسوّق حسب الغرفة",ckb:"بەپێی ژوور بگەڕێ"},
-  "rooms.sub":{en:"Everything for a complete home — chosen for quality, comfort and lasting style.",ar:"كل ما يلزم لبيتٍ متكامل — مختارٌ للجودة والراحة والأناقة الدائمة.",ckb:"هەموو شتێک بۆ ماڵێکی تەواو — هەڵبژێردراو بۆ کوالیتی، ئاسوودەیی و شێوازی بەردەوام."},
-  "room.sofa":{en:"Sofa Sets",ar:"أطقم كنب",ckb:"سێت کەنەفە"},
-  "room.bedroom":{en:"Bedrooms",ar:"غرف النوم",ckb:"ژووری نوستن"},
-  "room.dining":{en:"Dining Rooms",ar:"غرف الطعام",ckb:"ژووری نانخواردن"},
-  "room.wardrobe":{en:"Wardrobes",ar:"الدواليب",ckb:"دۆڵاب"},
-  "room.armchair":{en:"Armchairs",ar:"الكراسي",ckb:"کورسیی دەستدار"},
-  "room.tv":{en:"TV Units",ar:"وحدات التلفاز",ckb:"یونیتی تەلەفزیۆن"},
-  "room.corner":{en:"Corner Sofas",ar:"كنب الزاوية",ckb:"کەنەفەی گۆشە"},
-  "room.decor":{en:"Décor & Lighting",ar:"ديكور وإضاءة",ckb:"دیکۆر و ڕووناکی"},
-  "feat.eyebrow":{en:"Featured",ar:"مختارات",ckb:"هەڵبژاردە"},
-  "feat.title":{en:"Pieces that make a home",ar:"قطعٌ تصنع البيت",ckb:"ئەو پارچانەی ماڵ دروستدەکەن"},
-  "feat.cta":{en:"Discover",ar:"اكتشف",ckb:"بیدۆزەرەوە"},
-  "feat1.title":{en:"The Living Room",ar:"غرفة الجلوس",ckb:"ژووری دانیشتن"},
-  "feat1.text":{en:"Statement sofas and corner sets in rich fabrics and leathers — built for evenings that linger.",ar:"كنب وأطقم زاوية بأقمشة وجلودٍ فاخرة — لأمسياتٍ لا تنتهي.",ckb:"کەنەفە و سێتی گۆشە بە قوماش و چەرمی لوکس — بۆ ئەو ئێوارانەی درێژ دەبنەوە."},
-  "feat2.title":{en:"The Bedroom",ar:"غرفة النوم",ckb:"ژووری نوستن"},
-  "feat2.text":{en:"Calm, considered bedrooms — beds, wardrobes and dressers finished to last.",ar:"غرف نومٍ هادئة ومدروسة — أسرّة ودواليب وتسريحاتٌ بصناعةٍ تدوم.",ckb:"ژووری نوستنی ئارام و وردبینراو — قەرەوێڵە، دۆڵاب و مێزی نەخش بە کوالیتییەکی بەردەوام."},
-  "feat3.title":{en:"The Dining Room",ar:"غرفة الطعام",ckb:"ژووری نانخواردن"},
-  "feat3.text":{en:"Tables that gather everyone — timeless dining sets for family and guests.",ar:"طاولاتٌ تجمع الجميع — أطقم طعامٍ خالدة للعائلة والضيوف.",ckb:"مێزی کۆکردنەوەی هەمووان — سێتی نانخواردنی هەمیشەیی بۆ خێزان و میوان."},
+  "strip.1":{en:"Whey Protein",ar:"بروتين واي",ckb:"پرۆتینی وەی"},
+  "strip.2":{en:"Creatine",ar:"كرياتين",ckb:"کریاتین"},
+  "strip.3":{en:"Pre-Workout",ar:"بري-وركاوت",ckb:"پری-وۆرکئاوت"},
+  "strip.4":{en:"BCAA",ar:"أحماض أمينية",ckb:"بی سی ئەی ئەی"},
+  "strip.5":{en:"Vitamins",ar:"فيتامينات",ckb:"ڤیتامین"},
+  "strip.6":{en:"Mass Gainer",ar:"زيادة الوزن",ckb:"ماس گەینەر"},
+  "dealer.text":{en:"Official dealer of leading supplement brands",ar:"الوكيل الرسمي لكبرى ماركات المكملات",ckb:"بریکاری فەرمیی گەورەترین براندەکانی سەپلیمێنت"},
+  "cats.eyebrow":{en:"Shop",ar:"المتجر",ckb:"بازاڕ"},
+  "cats.title":{en:"Shop by category",ar:"تسوّق حسب الفئة",ckb:"بەپێی جۆر بگەڕێ"},
+  "cats.sub":{en:"Everything you need to train, recover and stay healthy — all 100% genuine.",ar:"كل ما تحتاجه للتمرين والتعافي والصحة — كله أصلي 100%.",ckb:"هەرچی پێویستە بۆ مەشق، چاکبوونەوە و تەندروستی — هەمووی ١٠٠٪ ئەسڵی."},
+  "cat.whey":{en:"Whey Protein",ar:"بروتين واي",ckb:"پرۆتینی وەی"},
+  "cat.whey.s":{en:"Whey · Isolate · Vegan",ar:"واي · آيزوليت · نباتي",ckb:"وەی · ئایسۆلێت · ڕووەکی"},
+  "cat.pre":{en:"Pre-Workout",ar:"بري-وركاوت",ckb:"پری-وۆرکئاوت"},
+  "cat.pre.s":{en:"Energy · Pump · Focus",ar:"طاقة · ضخّ · تركيز",ckb:"وزە · پەمپ · فۆکەس"},
+  "cat.crea":{en:"Creatine",ar:"كرياتين",ckb:"کریاتین"},
+  "cat.crea.s":{en:"Strength · Volume",ar:"قوة · حجم",ckb:"هێز · قەبارە"},
+  "cat.bcaa":{en:"Amino & BCAA",ar:"أحماض أمينية",ckb:"ئەمینۆ و BCAA"},
+  "cat.bcaa.s":{en:"Recovery · Endurance",ar:"تعافٍ · تحمّل",ckb:"چاکبوونەوە · بەرگری"},
+  "cat.mass":{en:"Mass Gainer",ar:"زيادة الوزن",ckb:"ماس گەینەر"},
+  "cat.mass.s":{en:"Bulk · Calories",ar:"تضخيم · سعرات",ckb:"قەبارە · کالۆری"},
+  "cat.vit":{en:"Vitamins & Health",ar:"فيتامينات وصحة",ckb:"ڤیتامین و تەندروستی"},
+  "cat.vit.s":{en:"Immunity · Wellness",ar:"مناعة · عافية",ckb:"بەرگری · تەندروستی"},
+  "cat.fat":{en:"Fat Burner",ar:"حارق الدهون",ckb:"سووتێنەری چەوری"},
+  "cat.fat.s":{en:"Lean · Define",ar:"رشاقة · تنشيف",ckb:"لاوازبوون · ڕێکخستن"},
+  "cat.acc":{en:"Shakers & More",ar:"شيكر وإكسسوارات",ckb:"شەیکەر و زیاتر"},
+  "cat.acc.s":{en:"Bottles · Gear",ar:"قوارير · معدات",ckb:"بوتڵ · ئامراز"},
+  "goals.eyebrow":{en:"Built around you",ar:"مصمّم لك",ckb:"بۆ تۆ ڕێکخراوە"},
+  "goals.title":{en:"Reach your goal",ar:"حقّق هدفك",ckb:"بگە بە ئامانجەکەت"},
+  "goals.sub":{en:"Tell us where you're headed — we'll match the right products to get you there.",ar:"أخبرنا بهدفك — ونختار لك المنتجات المناسبة للوصول إليه.",ckb:"پێمان بڵێ بەرەو کوێ دەچیت — گونجاوترین بەرهەمەکانت بۆ هەڵدەبژێرین."},
+  "goals.cta":{en:"Build my stack",ar:"رتّب برنامجي",ckb:"پرۆگرامەکەم دروستبکە"},
+  "goal1.t":{en:"Build muscle",ar:"ابنِ عضلاتك",ckb:"ماسوولکە دروستبکە"},
+  "goal1.d":{en:"Premium whey, isolates and mass gainers to grow and hold lean size, session after session.",ar:"بروتين واي وآيزوليت وزيادة وزن لبناء كتلة عضلية صافية والحفاظ عليها تمريناً بعد تمرين.",ckb:"پرۆتینی وەی، ئایسۆلێت و ماس گەینەری باش بۆ گەشەکردن و پاراستنی ماسوولکە، مەشق دوای مەشق."},
+  "goal2.t":{en:"Train harder",ar:"تمرّن بقوة",ckb:"بەهێزتر مەشق بکە"},
+  "goal2.d":{en:"Pre-workout, creatine and energy formulas for explosive sessions and serious focus.",ar:"بري-وركاوت وكرياتين وصيغ طاقة لتمارين متفجّرة وتركيز عالٍ.",ckb:"پری-وۆرکئاوت، کریاتین و فۆرموڵای وزە بۆ مەشقی بەهێز و فۆکەسی بەرز."},
+  "goal3.t":{en:"Recover & thrive",ar:"تعافَ وانطلق",ckb:"چاکببەرەوە و بەهێزبە"},
+  "goal3.d":{en:"Amino acids, vitamins and daily health essentials so you bounce back and feel your best.",ar:"أحماض أمينية وفيتامينات وأساسيات صحية يومية لتتعافى وتشعر بأفضل حال.",ckb:"ئەمینۆ ئاسید، ڤیتامین و پێداویستیی تەندروستیی ڕۆژانە بۆ چاکبوونەوە و باشترین هەست."},
   "why.eyebrow":{en:"Why Elit",ar:"لماذا إيليت",ckb:"بۆچی ئێلیت"},
-  "why.title":{en:"The Elit difference",ar:"الفرق مع إيليت",ckb:"جیاوازیی ئێلیت"},
-  "why.sub":{en:"A showroom that respects your taste, your time and your home.",ar:"معرضٌ يحترم ذوقك ووقتك وبيتك.",ckb:"شۆڕوومێک کە ڕێز لە سەلیقە، کات و ماڵەکەت دەگرێت."},
-  "why1.t":{en:"Curated quality",ar:"جودة منتقاة",ckb:"کوالیتیی هەڵبژێردراو"},
-  "why1.d":{en:"Only original pieces from makers we trust.",ar:"قطع أصلية فقط من مصانع نثق بها.",ckb:"تەنها پارچەی ئەسڵی لە کۆمپانیای متمانەپێکراو."},
+  "why.title":{en:"No fakes. No guesswork.",ar:"لا تقليد. لا تخمين.",ckb:"نە ساختە. نە گریمان."},
+  "why.sub":{en:"The supplement store athletes in Slêmanî actually trust.",ar:"متجر المكملات الذي يثق به رياضيو السليمانية فعلاً.",ckb:"ئەو فرۆشگای سەپلیمێنتەی وەرزشکارانی سلێمانی بەڕاستی متمانەی پێدەکەن."},
+  "why1.t":{en:"100% Original",ar:"أصلي 100%",ckb:"١٠٠٪ ئەسڵی"},
+  "why1.d":{en:"Every product authentic and sealed, with a valid expiry date.",ar:"كل منتج أصلي ومختوم، بتاريخ صلاحية ساري.",ckb:"هەموو بەرهەمێک ئەسڵی و مۆرکراوە، بە بەرواری بەسەرچوونی دروست."},
   "why2.t":{en:"Delivery across Iraq",ar:"توصيل لكل العراق",ckb:"گەیاندن بۆ هەموو عێراق"},
   "why2.d":{en:"To your door in Slêmanî and beyond.",ar:"إلى باب بيتك في السليمانية وغيرها.",ckb:"تا بەردەرگای ماڵت لە سلێمانی و دەرەوەشی."},
-  "why3.t":{en:"Showroom experience",ar:"تجربة المعرض",ckb:"ئەزموونی شۆڕووم"},
-  "why3.d":{en:"See, touch and feel before you choose.",ar:"شاهد، المس واختبر قبل أن تختار.",ckb:"ببینە، دەستی لێبدە و هەستی پێبکە پێش هەڵبژاردن."},
-  "why4.t":{en:"After-sales care",ar:"خدمة ما بعد البيع",ckb:"خزمەتگوزاریی دوای فرۆشتن"},
-  "why4.d":{en:"We're here long after delivery.",ar:"نبقى معك بعد التوصيل بوقتٍ طويل.",ckb:"دوای گەیاندنیش بۆ ماوەیەکی درێژ لەگەڵتداین."},
-  "visit.eyebrow":{en:"Visit us",ar:"معرضنا",ckb:"سەردانمان بکە"},
-  "visit.title":{en:"Come see it in person",ar:"تعال وشاهده بنفسك",ckb:"وەرە بە چاوی خۆت ببینە"},
-  "visit.addrlabel":{en:"Showroom",ar:"المعرض",ckb:"شۆڕووم"},
+  "why3.t":{en:"Expert guidance",ar:"نصيحة الخبراء",ckb:"ئامۆژگاریی پسپۆڕ"},
+  "why3.d":{en:"Tell us your goal — we'll build the right stack for you.",ar:"أخبرنا بهدفك — نرتّب لك البرنامج المناسب.",ckb:"ئامانجەکەت پێمان بڵێ — گونجاوترین پرۆگرامت بۆ ئامادەدەکەین."},
+  "why4.t":{en:"Fair prices",ar:"أسعار عادلة",ckb:"نرخی گونجاو"},
+  "why4.d":{en:"Honest value on the brands you train with.",ar:"قيمة صادقة على الماركات التي تتمرّن بها.",ckb:"نرخی ڕاستەقینە لەسەر ئەو براندانەی پێیان مەشق دەکەیت."},
+  "visit.eyebrow":{en:"Visit us",ar:"زورونا",ckb:"سەردانمان بکە"},
+  "visit.title":{en:"Come see the shelves",ar:"تعال وشاهد المتجر",ckb:"وەرە ڕەفەکان ببینە"},
+  "visit.addrlabel":{en:"Store",ar:"المتجر",ckb:"فرۆشگا"},
   "visit.addr":{en:"Cani Ba, Sulaymaniyah",ar:"جانی با، السليمانية",ckb:"جانی با، سلێمانی"},
   "visit.hourslabel":{en:"Open daily",ar:"مفتوح يومياً",ckb:"هەموو ڕۆژێک کراوەیە"},
   "visit.phonelabel":{en:"Call / WhatsApp",ar:"اتصال / واتساب",ckb:"پەیوەندی / واتساپ"},
   "visit.cta":{en:"Get directions",ar:"احصل على الاتجاهات",ckb:"ڕێنمایی بۆ شوێن"},
   "contact.eyebrow":{en:"Let's talk",ar:"لنتحدّث",ckb:"با قسە بکەین"},
-  "contact.title":{en:"Let's furnish your home",ar:"لنؤثّث بيتك معاً",ckb:"با پێکەوە ماڵەکەت ڕابخەین"},
-  "contact.sub":{en:"Send us the room and your budget on WhatsApp — we'll send back options the same day.",ar:"أرسل لنا الغرفة وميزانيتك على واتساب — نرسل لك الخيارات في نفس اليوم.",ckb:"ژوورەکە و بودجەکەت بۆ واتساپ بنێرە — هەمان ڕۆژ هەڵبژاردەکانت بۆ دەنێرینەوە."},
+  "contact.title":{en:"Tell us your goal. We'll build your stack.",ar:"أخبرنا بهدفك، ونرتّب لك برنامجك.",ckb:"ئامانجەکەت پێمان بڵێ، ئێمە پرۆگرامەکەت بۆ ئامادەدەکەین."},
+  "contact.sub":{en:"Message us on WhatsApp with your goal and budget — we'll recommend the right products the same day.",ar:"راسلنا على واتساب بهدفك وميزانيتك — نرشّح لك المنتجات المناسبة في نفس اليوم.",ckb:"لە واتساپ ئامانج و بودجەکەت بنێرە — هەمان ڕۆژ گونجاوترین بەرهەمەکانت پێشنیار دەکەین."},
   "contact.cta":{en:"Message on WhatsApp",ar:"راسلنا على واتساب",ckb:"لە واتساپ پەیوەندیمان پێوە بکە"},
   "contact.insta":{en:"Follow on Instagram",ar:"تابعنا على إنستغرام",ckb:"لە ئینستاگرام فۆڵۆومان بکە"},
-  "footer.tag":{en:"Premium furniture in Sulaymaniyah. Official dealer of leading brands.",ar:"أثاث فاخر في السليمانية. الوكيل الرسمي لكبرى الماركات.",ckb:"مۆبیلیای لوکس لە سلێمانی. بریکاری فەرمیی گەورەترین براندەکان."},
-  "footer.shop":{en:"Shop",ar:"تسوّق",ckb:"بازاڕ"},
+  "footer.tag":{en:"100% original sports nutrition in Sulaymaniyah. Delivery across Iraq.",ar:"تغذية رياضية أصلية 100% في السليمانية. توصيل لكل العراق.",ckb:"خۆراکی وەرزشیی ١٠٠٪ ئەسڵی لە سلێمانی. گەیاندن بۆ هەموو عێراق."},
+  "footer.shop":{en:"Shop",ar:"المتجر",ckb:"بازاڕ"},
   "footer.company":{en:"Company",ar:"الشركة",ckb:"کۆمپانیا"},
   "footer.connect":{en:"Connect",ar:"تواصل",ckb:"پەیوەندی"},
   "footer.rights":{en:"All rights reserved.",ar:"جميع الحقوق محفوظة.",ckb:"هەموو مافەکان پارێزراون."},
   "footer.demo":{en:"Concept demo · Designed by Iratus Sanchez",ar:"نموذج تجريبي · تصميم إيراتوس سانشيز",ckb:"دیمۆی نموونەیی · دیزاینی ئیراتوس سانشیز"}
 };
 const RTL = {ckb:true, ar:true, en:false};
-const HTMLKEYS = new Set(["hero.title","hero.proof"]); // entries that contain markup
-
+const HTMLKEYS = new Set(["hero.title"]);
 function setLang(lang){
-  const html = document.documentElement;
-  html.lang = lang;
-  html.dir = RTL[lang] ? "rtl" : "ltr";
+  const html=document.documentElement;
+  html.lang=lang; html.dir=RTL[lang]?"rtl":"ltr";
   document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const k = el.getAttribute("data-i18n");
-    const entry = I18N[k];
-    if(!entry || entry[lang]==null) return;
-    if(HTMLKEYS.has(k)) el.innerHTML = entry[lang];
-    else el.textContent = entry[lang];
+    const k=el.getAttribute("data-i18n"), e=I18N[k];
+    if(!e||e[lang]==null) return;
+    if(HTMLKEYS.has(k)) el.innerHTML=e[lang]; else el.textContent=e[lang];
   });
-  document.querySelectorAll(".langsw button").forEach(b=>{
-    b.classList.toggle("on", b.dataset.lang===lang);
-  });
-  try{ localStorage.setItem("elit-lang", lang); }catch(e){}
+  document.querySelectorAll(".langsw button").forEach(b=>b.classList.toggle("on",b.dataset.lang===lang));
+  try{localStorage.setItem("elit-lang",lang);}catch(e){}
 }
-
-document.querySelectorAll(".langsw button").forEach(b=>{
-  b.addEventListener("click", ()=> setLang(b.dataset.lang));
-});
-
-/* header scroll state */
-const hdr = document.getElementById("hdr");
-const onScroll = ()=> hdr.classList.toggle("scrolled", window.scrollY > 40);
-window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
-
-/* mobile menu */
-const mmenu = document.getElementById("mmenu");
-const burger = document.getElementById("burger");
-const openM = ()=>{ mmenu.classList.add("open"); burger.setAttribute("aria-expanded","true"); };
-const closeM = ()=>{ mmenu.classList.remove("open"); burger.setAttribute("aria-expanded","false"); };
-burger.addEventListener("click", openM);
-document.getElementById("mclose").addEventListener("click", closeM);
-mmenu.querySelectorAll("a").forEach(a=> a.addEventListener("click", closeM));
-
-/* reveal on scroll */
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
-},{threshold:.16, rootMargin:"0px 0px -8% 0px"});
-document.querySelectorAll(".reveal,.stagger").forEach(el=> io.observe(el));
-
-/* year + initial language */
-document.getElementById("yr").textContent = new Date().getFullYear();
-let saved = "ckb";
-try{ saved = localStorage.getItem("elit-lang") || "ckb"; }catch(e){}
+document.querySelectorAll(".langsw button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+const hdr=document.getElementById("hdr");
+const onScroll=()=>hdr.classList.toggle("scrolled",window.scrollY>40);
+window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+const mmenu=document.getElementById("mmenu"), burger=document.getElementById("burger");
+burger.addEventListener("click",()=>{mmenu.classList.add("open");burger.setAttribute("aria-expanded","true");});
+const closeM=()=>{mmenu.classList.remove("open");burger.setAttribute("aria-expanded","false");};
+document.getElementById("mclose").addEventListener("click",closeM);
+mmenu.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeM));
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.16,rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".reveal,.stagger").forEach(el=>io.observe(el));
+document.getElementById("yr").textContent=new Date().getFullYear();
+let saved="ckb"; try{saved=localStorage.getItem("elit-lang")||"ckb";}catch(e){}
 setLang(saved);
 </script>
 </body>
